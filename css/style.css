@@ -1,17 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif; }
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #200fbb;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 50rem;
+    margin: 3.125rem auto;
+    background-color: #e7e2ff;
+    padding: 1.25rem;
+    border-radius: 8p;
+    box-shadow: 0 0 .625rem rgba(0,0,0,0.1);
 }
 
 header h1 {
@@ -20,7 +26,7 @@ header h1 {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 h2 {
@@ -35,33 +41,32 @@ ul {
 footer {
     text-align: center;
     color: #888;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .navbar {
     background-color: #0306c9;
-    padding: 10px 20px; /* Aumenta un poco el padding para separar los enlaces de los bordes */
+    padding: .625rem 1.25rem; 
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos al extremo izquierdo y derecho */
-}
+    justify-content: space-between;}
 
 .left-links, .right-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinear los elementos dentro de cada lista */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex;
+    align-items: center;
 }
 
 .left-links li, .right-links li {
-    margin: 0 10px; /* Espacio entre los enlaces */
+    margin: 0 .625rem; 
 }
 
 .navbar a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: .3125rem .625rem;
+    border-radius: .3125rem;
     transition: background-color 0.3s ease;
 }
 
@@ -70,24 +75,51 @@ footer {
 }
 
 .navbar {
-    position: fixed;     /* Hace que la barra de navegación sea fija */
-    top: 0;             /* Fija la barra de navegación en la parte superior */
-    left: 0;            /* Asegura que la barra esté pegada a la izquierda */
-    right: 0;           /* Asegura que la barra esté pegada a la derecha */
-    z-index: 1000;      /* Asegura que la barra de navegación esté por encima de otros elementos */
+    position: fixed;     
+    top: 0;            
+    left: 0;            
+    right: 0;          
+    z-index: 1000;     
     background-color: #333;
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
     display: flex;
     justify-content: space-between;
 }
 
-/* Resto de tus estilos... */
+
 
 .container {
-    margin-top: 60px;   /* Ajusta el margen superior del contenedor para evitar que se solape con la barra de navegación fija */
+    margin-top: 3.75rem; 
 }
 
-/* Añade una transición para un efecto suave si lo deseas */
+
 .navbar {
     transition: all 0.3s ease-in-out;
+}
+#imagenDino {
+    width: 12.5rem; /* Ancho deseado de la imagen */
+    height: 12.5rem; /* Altura deseada de la imagen */
+    border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del círculo */
+    object-fit: cover; /* la imagen no se distorciona */
+    float: left; /* Coloca la imagen a la izquierda del texto */
+    margin-right: 1.25rem; /* Espacio entre la imagen y el texto */
+    margin-bottom: 1.25rem; /* Espacio por debajo de la imagen */
+    clear: both; /*Evita que se superpongan */
+}
+.sobre-mi {
+    text-align: center; /* Centra el contenido de la sección "sobre mi" */
+    margin-right: 1.25rem; /* Espacio entre la sección "Sobre mí" y la siguiente */
+    margin-top: 1.25rem;
+}
+.sobre-mi h2 {
+    margin-bottom: 1.25rem;
+}
+.sobre-mi p{
+    margin-top: 5rem; /* Ajusta el margen superior del párrafo para que esté más abajo */
+    text-align: justify; /* Justifica el texto para que rodee la imagen */
+}
+.misHabilidades {
+    text-align: center; /* Centra el contenido de la sección "Mis habilidades" */
+    clear: both; /* Evita que el contenido se superponga */
 }
